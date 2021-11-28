@@ -1,0 +1,136 @@
+body{
+    background-color: lavender;
+    margin: 0px;
+}
+
+#outer{
+     border: 1px solid red;
+     width: 500px;
+     margin: auto;
+     background-color: white;
+}
+
+#app-name{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 40px;
+    color:coral;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 7px;
+    margin-top: 20px;
+}
+#description{
+    border-top: 1px solid silver;
+    padding: 7px;
+}
+#description-input{
+    border: none;
+    padding: 3px;
+    font-size: 1.1rem;
+    width: 100%;
+    font-family: sans-serif;
+}
+#description-input:focus{
+    outline: none;
+}
+
+#data-selector{
+    border-top: 1px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#selector{
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+}
+#category label{
+    display: block;
+    padding: 2px;
+}
+#category{
+    /* border: 1px solid red; */
+    width: 46.5%;
+    padding: 7px;
+}
+#selector:focus{
+    outline: none;
+}
+#due-date{
+    /* border: 1px solid red; */
+    width: 47%;
+    padding: 7px;
+}
+#due-date input{
+    outline: none;
+}
+#due-date label{
+    display: block;
+    padding: 2px;
+}
+#due-date input{
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+}
+#task-area{
+    border-top: 1px solid silver;
+    text-align: center;
+
+}
+#add-task{
+       padding-top: 7px;
+}
+#add-task button{
+    border: none;
+    font-size: 1.1rem;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: gray;
+    color: white;
+}
+#delete-task{
+      /* margin: 5px; */
+      position: relative;
+      left: 37%;   
+      /* border: 1px solid; */
+      padding-bottom: 7px;
+}
+#delete-task button{
+    border: none;
+    font-size: 1.1rem;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: orangered;
+    color: white;
+}
+.deleted-div{
+    border-top: 1px solid silver;
+}
+.deleted-div button{
+    position: relative;
+    left: 80%;
+    top: -30px;
+    font-size: 1.1rem;
+    border: none;
+    padding: 7px;
+    width: 90px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    color: white;
+}
+.date{
+    margin: 0;
+    padding: 5px; 
+    margin-left: 20px;   
+    width: 100px;
+}
+.deleted-div label{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+#checkbox{
+    font-size: 1.2rem;
+}

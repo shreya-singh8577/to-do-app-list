@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+      <section id="outer">
+             <h1 id="app-name">TODO App</h1>
+     <form action="/description-added" method="POST">    
+         <!--Description field....  -->
+             <div id="description">               
+                    <label for="" >DESCRIPTION</label><br>
+                    <input type="text" id="description-input" placeholder="what do you need do?" name="description">
+             </div>
+             <div id="data-selector">
+                 <!-- Category field... -->
+                 <div id="category">
+                     <label for="">Category</label>
+                     <select name="category" id="selector">
+                         <option value="not_choosen">Choose a category</option>
+                         <option value="work">work</option>
+                         <option value="personel">Personel</option>
+                         <option value="home">Home</option>
+                         <option value="other">Others</option>
+                     </select> 
+                 </div>
+                 <!-- Due date field... -->
+                 <div id="due-date">
+                        <label for="">Due Date</label>
+                        <input type="date" name="due_date">
+                 </div>
+             </div>
+            <!-- Task Button.. -->
+            <div id="task-area">
+                <div id="add-task">
+                    <button type="submit" id="add-button">ADD TASK</button>
+                </div>
+                </div>
+            </form>    
+            <!-- Data collecting form end -->
+   
+           <!--Deletion of task start... -->
+           
+                <form action="/deleted-data" method="POST">
+                    <div id="delete-task">
+                        <button type="submit">DELETE TASK</button> 
+                    </div>   
+             <% for(let i of fetchedData){%>
+                <div class="deleted-div">
+                     
+                     <input type="checkbox" value="<%=i.id%>" name="check" id="checkbox">
+                     <label for=""><%= i.description %></label>
+                     <p class="date"><%=i.date%></p>
+                     <button class="saved-category"><%=i.category%></button>                 
+                </div>
+                <%}%>
+              </form>
+        </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/home.js"></script>
+    
+</body>
+</html>
+
+
+
+
